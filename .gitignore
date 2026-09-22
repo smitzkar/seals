@@ -1,1 +1,7 @@
 _misc/
+_training/clay_seals_dataset
+_training/runs
+_training/seals_found
+_training/data 
+_training/outputs
+.venv
