@@ -20,6 +20,12 @@ https://netron.app/
 the DOM  
 https://dom.spec.whatwg.org/
 
+html (suuuuper comprehensive and indepth -> bedtime reading) 
+https://html.spec.whatwg.org/
+
+canvas performance 
+https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+
 ### js
 
 how it works (event loop and agents)  
