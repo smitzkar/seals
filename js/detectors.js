@@ -13,6 +13,11 @@
 * needs config.js loaded first (for CONFIG), and must itself load before app.js.
 */
 
+// a note from chrome devtools: 
+// set willReadFrequently true to speed things up
+// https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+// const ctx = tempCanvas.getContext("2d", { willReadFrequently: true });
+
 const STEP = 2; // only every n-th pixel checked
 
 
@@ -267,7 +272,7 @@ const yoloDetector = {
     tempCanvas.width = 640;
     tempCanvas.height = 640;
 
-    const ctx = tempCanvas.getContext("2d");
+    const ctx = tempCanvas.getContext("2d", { willReadFrequently: true });
     ctx.drawImage(capturedCanvas, 0, 0, 640, 640);
 
     const imageData = ctx.getImageData(0, 0, 640, 640);
